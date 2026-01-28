@@ -1,0 +1,20 @@
+import { describe, test } from "vitest";
+import { componentSchema, componentModules, modules } from "./setup.test.js";
+import { defineSchema } from "convex/server";
+import { convexTest } from "convex-test";
+
+const schema = defineSchema({});
+
+function setupTest() {
+  const t = convexTest(schema, modules);
+  t.registerComponent("ses", componentSchema, componentModules);
+  return t;
+}
+
+type ConvexTest = ReturnType<typeof setupTest>;
+
+describe("Ses", () => {
+  test("handleSnsNotification", async () => {
+    const _t: ConvexTest = setupTest();
+  });
+});

@@ -1,5 +1,5 @@
 import { defineApp } from "convex/server";
-import ses from "@convex-dev/ses/convex.config";
+import ses from "convex-aws-ses/convex.config";
 
 const app = defineApp();
 app.use(ses);

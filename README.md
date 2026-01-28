@@ -1,6 +1,6 @@
 # AWS SES Convex Component
 
-[![npm version](https://badge.fury.io/js/@convex-dev%2Fses.svg)](https://badge.fury.io/js/@convex-dev%2Fses)
+[![npm version](https://badge.fury.io/js/convex-aws-ses.svg)](https://badge.fury.io/js/convex-aws-ses)
 
 This component integrates AWS Simple Email Service (SES) with your Convex project.
 
@@ -19,7 +19,7 @@ application.
 ## Installation
 
 ```bash
-npm install @convex-dev/ses
+npm install convex-aws-ses
 ```
 
 ## Get Started
@@ -36,7 +36,7 @@ Next, add the component to your Convex app via `convex/convex.config.ts`:
 
 ```ts
 import { defineApp } from "convex/server";
-import ses from "@convex-dev/ses/convex.config.js";
+import ses from "convex-aws-ses/convex.config.js";
 
 const app = defineApp();
 app.use(ses);
@@ -48,7 +48,7 @@ Then you can use it, as we see in `convex/sendEmails.ts`:
 
 ```ts
 import { components } from "./_generated/api";
-import { Ses } from "@convex-dev/ses";
+import { Ses } from "convex-aws-ses";
 import { internalAction } from "./_generated/server";
 
 export const ses: Ses = new Ses(components.ses, {});
@@ -127,7 +127,7 @@ Update your `sendEmails.ts` to look something like this:
 ```ts
 import { components, internal } from "./_generated/api";
 import { internalMutation } from "./_generated/server";
-import { vOnEmailEventArgs, Ses } from "@convex-dev/ses";
+import { vOnEmailEventArgs, Ses } from "convex-aws-ses";
 
 export const ses: Ses = new Ses(components.ses, {
   onEmailEvent: internal.example.handleEmailEvent,
@@ -315,7 +315,7 @@ import { action } from "./_generated/server";
 import { render, pretty } from "@react-email/render";
 import { Button, Html } from "@react-email/components";
 import { components } from "./_generated/api";
-import { Ses } from "@convex-dev/ses";
+import { Ses } from "convex-aws-ses";
 
 export const ses: Ses = new Ses(components.ses, {
   testMode: false,
@@ -368,7 +368,7 @@ status and event APIs.
 ```ts
 import { components, internal } from "./_generated/api";
 import { internalAction } from "./_generated/server";
-import { Ses } from "@convex-dev/ses";
+import { Ses } from "convex-aws-ses";
 import {
   SESv2Client,
   SendEmailCommand,

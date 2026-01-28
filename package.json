@@ -1,13 +1,13 @@
 {
-  "name": "@convex-dev/ses",
+  "name": "convex-aws-ses",
   "description": "An AWS SES email component for Convex.",
-  "repository": "github:get-convex/ses",
-  "homepage": "https://github.com/get-convex/ses#readme",
+  "repository": "github:orenaksakal/convex-aws-ses-emails-component",
+  "homepage": "https://github.com/orenaksakal/convex-aws-ses-emails-component#readme",
   "bugs": {
-    "email": "support@convex.dev",
-    "url": "https://github.com/get-convex/ses/issues"
+    "email": "orenaksakal@gmail.com",
+    "url": "https://github.com/orenaksakal/convex-aws-ses-emails-component/issues"
   },
-  "version": "0.3.0",
+  "version": "1.0.0",
   "license": "Apache-2.0",
   "keywords": [
     "convex",

@@ -51,5 +51,5 @@ export declare const internal: FilterApi<
 >;
 
 export declare const components: {
-  ses: import("@convex-dev/ses/_generated/component.js").ComponentApi<"ses">;
+  ses: import("convex-aws-ses/_generated/component.js").ComponentApi<"ses">;
 };

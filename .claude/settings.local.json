@@ -9,7 +9,10 @@
       "Bash(git checkout:*)",
       "Bash(npm run typecheck:*)",
       "Bash(npm run test:*)",
-      "Bash(npm run lint:*)"
+      "Bash(npm run lint:*)",
+      "Bash(git -C /Users/orenaksakal/Projects/aws-ses log --oneline)",
+      "Bash(git -C /Users/orenaksakal/Projects/aws-ses remote:*)",
+      "Bash(npm view:*)"
     ]
   }
 }

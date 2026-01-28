@@ -4,7 +4,7 @@ import {
   internalQuery,
 } from "./_generated/server";
 import { components, internal } from "./_generated/api";
-import { Ses, vOnEmailEventArgs } from "@convex-dev/ses";
+import { Ses, vOnEmailEventArgs } from "convex-aws-ses";
 import { v } from "convex/values";
 import {
   SESv2Client,
